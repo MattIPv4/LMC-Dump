@@ -1,0 +1,22 @@
+FIBONACCI_TO_N DAT 701
+        INP
+        STA N
+LOOP    LDA N
+        SUB A
+        BRZ END
+        BRP GO
+        BRA END
+GO      LDA A
+        OUT
+        STA TEMP
+        LDA B
+        STA A
+        LDA TEMP
+        ADD B
+        STA B
+        BRA LOOP
+END     HLT
+N       DAT
+TEMP    DAT
+A       DAT 0
+B       DAT 1
