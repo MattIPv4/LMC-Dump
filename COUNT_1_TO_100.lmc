@@ -1,0 +1,12 @@
+COUNT_1_TO_100 DAT 701
+START   LDA COUNT
+        OUT
+        ADD ONE
+        STA COUNT
+        LDA END
+        SUB COUNT
+        BRP START
+        HLT
+COUNT   DAT
+ONE     DAT 1
+END     DAT 100
