@@ -1,0 +1,9 @@
+COUNT_100_TO_1 DAT 701
+LOOP    LDA COUNT
+        OUT
+        SUB ONE
+        STA COUNT
+        BRP LOOP
+        HLT
+COUNT   DAT 100
+ONE     DAT 1
