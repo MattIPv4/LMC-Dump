@@ -1,0 +1,21 @@
+IS_B_SMALLER_OR_LARGER_THAN_A DAT 701
+        INP
+        STA A
+        INP
+        STA B
+        LDA A
+        SUB B
+        BRZ EQUAL
+        BRP SMALL
+        LDA HI
+        BRA END
+SMALL   LDA SM
+        BRA END
+EQUAL   LDA EQ
+END     OUT
+        HLT
+A       DAT
+B       DAT
+SM      DAT -1
+HI      DAT 1
+EQ      DAT 0
