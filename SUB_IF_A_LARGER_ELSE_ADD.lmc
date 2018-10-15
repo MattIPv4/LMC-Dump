@@ -1,0 +1,18 @@
+SUB_IF_A_LARGER_ELSE_ADD DAT 701
+        INP
+        STA A
+        INP
+        STA B
+        LDA A
+        SUB B
+        BRZ EQUAL
+        BRP SMALL
+        ADD B
+        ADD B
+        BRA END
+SMALL   BRA END
+EQUAL   HLT
+END     OUT
+        HLT
+A       DAT
+B       DAT
