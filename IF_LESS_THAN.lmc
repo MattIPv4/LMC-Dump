@@ -1,0 +1,13 @@
+IF_LESS_THAN DAT 701
+        INP
+        SUB LIMIT
+        BRP PASS_CASE
+        LDA FAIL
+        OUT
+        HLT
+PASS_CASE LDA PASS
+        OUT
+        HLT
+LIMIT   DAT 40
+PASS    DAT 1
+FAIL    DAT 0
