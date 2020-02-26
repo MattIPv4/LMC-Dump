@@ -1,0 +1,13 @@
+ADD_THREE_NUMBERS DAT 701
+        INP
+        ADD TOTAL
+        STA TOTAL
+        INP
+        ADD TOTAL
+        STA TOTAL
+        INP
+        ADD TOTAL
+        STA TOTAL
+        OUT
+        HLT
+TOTAL   DAT 0
