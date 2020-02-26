@@ -1,0 +1,11 @@
+SUBTRACT_SECOND_FROM_FIRST DAT 701
+        INP
+        STA NUM1
+        INP
+        STA NUM2
+        LDA NUM1
+        SUB NUM2
+        OUT
+        HLT
+NUM1    DAT 0
+NUM2    DAT 0
