@@ -1,0 +1,18 @@
+COUNT_A_TO_B_IN_C DAT 701
+        INP
+        STA COUNT
+        INP
+        STA END
+        INP
+        STA INC
+START   LDA COUNT
+        OUT
+        ADD INC
+        STA COUNT
+        LDA END
+        SUB COUNT
+        BRP START
+        HLT
+COUNT   DAT 1
+INC     DAT 1
+END     DAT 0
